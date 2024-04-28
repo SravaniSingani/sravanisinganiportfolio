@@ -24,6 +24,7 @@
     --white-alpha-4: rgba(255, 255, 255, 0.4);
     --white-alpha-25: rgba(255, 255, 255, 0.25);
     --backdrop-filter-blur: blue(5px);
+     --gradient: linear-gradient(45deg, #d4a29c, 20%, #aed8f1, 60%, #E8CCBF, 80% , #a6cce5);
 
 }
 
@@ -34,7 +35,7 @@
 
 body{
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right , #d4a29c, #aed8f1, #e8b298 );
+    background-image: var(--gradient);
     background-attachment: fixed;
     font-size: 16px;
     color: var(--dark-blue);
@@ -42,6 +43,19 @@ body{
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
     padding: 35px 15px;
+    animation: bg-animate 5s infinite alternate;
+    background-size: 400%;
+}
+
+@keyframes bg-animate{
+    0%{
+        background-position: left;
+        
+    }
+    100%{
+        background-position: right;
+
+    }
 }
 
 body.hide-scrolling{
