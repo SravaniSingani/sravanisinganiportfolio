@@ -1,40 +1,20 @@
+//Reveal on scroll
 
-//Project Item Details Popup
-
-document.addEventListener("click", (e) => {
-    if(e.target.classList.contains("view-project-btn")){
-      //  console.log("project view accessed");
-       toggleProjectPopup();
-       document.querySelector(".project-popup").scrollTo(0,0);
-       projectItemDetails(e.target.parentElement);
-    }
-})
-
-function toggleProjectPopup(){
-    document.querySelector(".project-popup").classList.toggle("open");
- // console.log("project function accessed");
-    document.body.classList.toggle("hide-scrolling");
-    document.querySelector(".main").classList.toggle("fade-out");
-}
-
-document.querySelector(".pp-close").addEventListener("click", toggleProjectPopup);
-
-// close popup when clicked out of the container
-document.addEventListener("click", (e) => {
-  //  console.log(e.target);
-      if(e.target.classList.contains("pp-inner")){
-        toggleProjectPopup();
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+     // console.log(entry);
+      if(entry.isIntersecting){
+          entry.target.classList.add('show');
       }
+      else{
+          entry.target.classList.remove('show');
+      }
+  });
 })
+const hiddenElements = document.querySelectorAll('.hiddenSection');
+hiddenElements.forEach((el) => observer.observe(el));
 
-function projectItemDetails(projectItem){
-  //  console.log(projectItem);
-    document.querySelector(".pp-thumbnail img").src = projectItem.querySelector(".project-item-thumbnail img").src;
 
-    document.querySelector(".pp-header h3").innerHTML = projectItem.querySelector(".project-item-title").innerHTML;
-
-    document.querySelector(".pp-body").innerHTML = projectItem.querySelector(".project-item-details").innerHTML;
-}
 
 // navbar toggle functionality
 
@@ -68,8 +48,28 @@ document.addEventListener("click", (e) => {
       document.body.classList.add("hide-scrolling");
     }
     setTimeout(() => {
-      document.querySelector("section.active").classList.remove("active", "fade-out");
-      document.querySelector(e.target.hash).classList.add("active");
+      //document.querySelectorAll("section.active").classList.remove("active", "fade-out");
+      // document.querySelectorAll("section.active").forEach((section) => {
+      //   section.classList.remove("active", "fade-out");
+      // });
+
+      if (e.target.hash === "#home") {
+        document.querySelectorAll("section").forEach((section) => {
+          section.classList.add("active");
+          section.classList.remove("fade-out");
+        });
+      } else {
+        // Remove active and fade-out classes from all sections
+        document.querySelectorAll("section.active").forEach((section) => {
+          section.classList.remove("active", "fade-out");
+        });
+
+        // Activate the target section
+        document.querySelector(e.target.hash).classList.add("active");
+      }
+
+      
+      //document.querySelector(e.target.hash).classList.add("active");
       window.scrollTo(0,0);
       document.body.classList.remove("hide-scrolling");
       navToggle.classList.remove("hide");

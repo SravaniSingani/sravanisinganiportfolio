@@ -14,12 +14,13 @@
     </div>
 
     <!-- main -->
-    <div class="main">
+    <div class="main" id="main">
 
         <!-- header -->
 
         <header class="header">
             <div class="container">
+                <h2>Sravani Singani</h2>
                 <div class="row flex-end">
                     <button type="button" class="nav-toggler">
                         <span></span>
@@ -28,8 +29,9 @@
                         <div class="nav-inner">
                             <ul>
                                 <li><a href="#home" class="nav-item link-item">Home</a></li>
-                                <li><a href="#about" class="nav-item link-item">About</a></li>
+                                <li><a href="#skills" class="nav-item link-item">Skills</a></li>
                                 <li><a href="#projects" class="nav-item link-item">Projects</a></li>
+                                <li><a href="#about" class="nav-item link-item">About</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -40,218 +42,185 @@
 
         <!-- home section -->
 
-        <section class="home-section align-items-center active" id="home">
+        <section class="home-section align-items-center active hiddenSection" id="home">
             <div class="container">
                 <div class="row align-items-center">
-
                     <div class="home-text">
-                        <p>Hi! I am</p>
-                        <h1>Sravani Singani</h1>
-                        <h2>Full Stack Developer</h2>
-                        <p>With a passion for creating innovative web solutions, I specialize in crafting dynamic and user-friendly websites and applications.</p>
-                        <a href="#about" class="btn link-item">About Me</a>
-                        <a href="#projects" class="btn link-item">Projects</a>
-                        <p>Let's connect and chat! You can find me on:</p>
-                        <a href="https://www.linkedin.com/in/singani-sravani-582926161/" class="socials"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/SravaniSingani" class="socials"> <i class='bx bxl-github' ></i></a>
-                        <a href="mailto:ssingani24@gmail.com" class="socials"><i class='bx bxl-gmail' ></i></a>
-                        
-                       
-                        
-                        
+                        <h1>Full Stack Developer with a Creative Edge</h1>
+                        <p>I am a <span>loyal</span> partner in your digital journey, providing exceptional services customized to your unique needs. Let’s transform your ideas into reality through code and creativity.</p>
+                        <h3>Let's Connect!!!</h3>
+                        <!-- <a href="#about" class="btn link-item">About Me</a>
+                        <a href="#projects" class="btn link-item">Projects</a> -->
+                        <!-- <p>Either you want to talk about tech or just grow your network, don’t shy away. Get in touch</p> -->
+                        <a href="mailto:ssingani24@gmail.com" class="socials" aria-describedby="mail"><i class='bx bxl-gmail' ></i></a>
+                        <a href="https://www.linkedin.com/in/singani-sravani-582926161/" class="socials" aria-describedby="linkedin"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/SravaniSingani" class="socials" aria-describedby="github"> <i class='bx bxl-github' ></i></a>
                     </div>
-
                     <div class="home-img">
                         <div class="img-box">
-                            <img src="img/profpic1.png" alt="profile picture">
+                            <img src="img/Home-Icon.svg" alt="profile picture">
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
-              <!-- about section -->
-        <section class="about-section sec-padding" id="about">
-            <div class="container">
-
-                <div class="row">
-                    <div class="section-title">
-                        <h2>About Me</h2>
-                    </div>
-                </div>
-
-                <div class="row">
-
-                    <div class="about-img">
-                        <div class="img-box">
-                            <img src="img/profpic1.png" alt="about img">
-                        </div>
-                    </div>
-
-                    <div class="about-text">
-                        <p>
-                            My aspiration to code has brought me all the way to Toronto, Canada.
-                            I have done ‘Web Development’ at Humber College which helped me pave the way to Web design and development industry. I did my B.E. in CSE at Stanley College, India. 
-                            Apart from coding, I spend my time exploring various design landscapes to expand my design perspective.
-                        </p>
-
-                        <h3>Technical Skills</h3>
-                        <div class="skills languages">
-                            <div class="skill-item">MERN Stack</div>
-                            <div class="skill-item">Laravel</div>
-                            <div class="skill-item">HTML</div>
-                            <div class="skill-item">CSS</div>
-                            <div class="skill-item">JavaScript</div>
-                            <div class="skill-item">PHP</div>
-                            <div class="skill-item">Asp.net</div>
-                           
-                        </div>
-
-                        <h3>Tools</h3>
-                        <div class="skills tools">
-                            <div class="skill-item">Github</div>
-                            <div class="skill-item">Figma</div>
-                            <div class="skill-item">Canva</div>
-                            <div class="skill-item">Mongo Atlas</div>
-                            <div class="skill-item">Visual Studio</div>
-                            <div class="skill-item">MAMP</div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </section>
 
      <!-- projects section -->
 
-     <section class="project-section sec-padding" id="projects">
+     <section class="project-section sec-padding active hiddenSection" id="projects">
         <div class="container">
             <div class="row">
                 <div class="section-title">
-                    <h2>Projects</h2>
+                    <h2>Highlights Of My Work</h2>
+                    <p>Dive in to explore my projects and see how I bring code to life with style and precision.</p>
                 </div>
             </div>
 
-            <div class="row">
-
+            <div class="col">
              <!-- projects items -->
-             <div class="project-item">
+             <div class="project-item1 hiddenSection">
                     <div class="project-item-thumbnail">
-                        <img src="img/fashionforecast.png" alt="fashion forecast">
+                        <img src="img/FashionForecast'.png" alt="fashion forecast">
                     </div>
-                    <h3 class="project-item-title">Fashion Forecast</h3>
-                    <button type="button" class="btn view-project-btn">View Project</button>
                     <div class="project-item-details">
+                    <h3 class="project-item-title">Fashion Forecast</h3>
                         <div class="description">
-                            <p>Fashion Forecast is a web application that utilizes the OpenWeatherMap and Pexels APIs to provide style suggestions based on the current weather in a user-selected city and their chosen gender. The website is built using Node.js for the backend and PUG for the frontend, with CSS for styling.
+                            <p>
+                                Fashion Forecast is your virtual style suggester, designed to enhance your daily wardrobe decisions. Simply input your location, and receive instant, weather-appropriate outfit ideas that blend fashion and functionality seamlessly. 
                             </p>
                         </div>
                         <div class="general-info">
                             <ul>
-                                <li>Created - <span> 5 April 2024</span></li>
-                                <li>Technologies Used - <span>Node.js, Express.js, Axios, Pug, CSS</span></li>
-                                <li>API's Used - <span>OpenWeatherMap, Pexels</span></li>
-                                <li>View Link - <span><a href="https://fashion-forecast-vercel.vercel.app/" target="_blank">Fashion Forecast</a></span></li>
-                                <li>Github Link - <span><a href="https://github.com/SravaniSingani/FashionForecastVercel" target="_blank">Fashion Forecast Github</a></span></li>
+                                <li>Tech Stack: <span>Node.js, Express.js, Pug</span></li>
+                                <li>APIs: <span>OpenWeatherMap, Pexels</span></li>
                             </ul>
+                            <div class="links">
+                                <a href="https://fashion-forecast-vercel-sravanisinganis-projects.vercel.app/" class="view-link">Live Demo</a>
+                                <a href="https://github.com/SravaniSingani/FashionForecastVercel" class="git-link">Source Code</a>
+                            </div>
                         </div>
                     </div>
              </div>
 
-                
+
              <!-- projects items -->
-             <div class="project-item">
-                <div class="project-item-thumbnail">
-                    <img src="img/tinytales.png" alt="tiny tales"> 
-                </div>
-                <h3 class="project-item-title">Tiny Tales</h3>
-                <button type="button" class="btn view-project-btn">View Project</button>
-                <div class="project-item-details">
-                    <div class="description">
-                        <p>TinyTales is a website demonstrating an online book store built using the MERN (MongoDB, Express.js, React, Node.js) stack. It allows users to explore a collection of books and authors, view detailed information about each book and author.</p>
-                    </div>
-                    <div class="general-info">
-                        <ul>
-                            <li>Created - <span> 17 April 2024</span></li>
-                            <li>Technologies Used - <span>MERN Stack (MongoDB, Express.js, React, and Node.js)</span></li>
-                            <li>View Link - <span><a href="https://tiny-tales-nine.vercel.app/" target="_blank">Tiny Tales</a></span></li>
-                            <li>Github Link - <span><a href="https://github.com/SravaniSingani/TinyTales" target="_blank">Tiny Tales Github</a></span></li>
-                        </ul>
-                    </div>
-                </div>
-             </div>
 
-
-               <!-- projects items 
-               <div class="project-item">
-                <div class="project-item-thumbnail">
-                    <img src="img/driveeasy.png" alt="drive easy>
-                </div>
-                <h3 class="project-item-title">DriveEasy</h3>
-                <button type="button" class="btn view-project-btn">View Project</button>
-                <div class="project-item-details">
-                    <div class="description">
-                        <p>DriveEasy is a CMS system demonstrating a model of an online 'Car Rental' platform. The website consists of different cars and brands.</p>
+            <div class="project-item2 hiddenSection">
+                    <div class="project-item-thumbnail">
+                        <img src="img/TinyTales copy.png" alt="fashion forecast">
                     </div>
-                    <div class="general-info">
-                        <ul>
-                            <li>Created - <span> 19 March 2024</span></li>
-                            <li>Technologies Used - <span>PHP, MySql, MAMP, Bootstrap, HTML, CSS</span></li>
-                            <li>View Link - <span><a href="http://assign1.rf.gd/index.php" target="_blank">Drive Easy</a></span></li>
-                            <li>View Link - <span><a href="https://github.com/SravaniSingani/phphttp5225/tree/main/Assign1-SravaniSingani" target="_blank">Drive Easy Github</a></span></li>
-                        </ul>
+                    <div class="project-item-details">
+                        <h3 class="project-item-title">Tiny Tales</h3>
+                        <div class="description">
+                            <p>
+                                Tiny Tales is a full stack MERN project. It fetches books and author data from MongoDB Atlas database using a RESTful API and displays it on a user-friendly interface, ensuring efficient data retrieval and presentation.
+                            </p>
+                        </div>
+                        <div class="general-info">
+                            <ul>
+                                <li>Tech Stack: <span>MERN (MongoDB, Express.js, React.js, Node.js)</span></li>
+                            </ul>
+                            <div class="links">
+                                <a href="https://tiny-tales-nine.vercel.app/" class="view-link">Live Demo</a>
+                                <a href="https://github.com/SravaniSingani/TinyTales" class="git-link">Source Code</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-             </div>
-              -->
-              <!-- projects items -->
-              <div class="project-item">
-                <div class="project-item-thumbnail">
-                    <img src="img/procrastination.png" alt="procrastination appreciation generator">
-                </div>
-                <h3 class="project-item-title">Procrastination Appreciator</h3>
-                <button type="button" class="btn view-project-btn">View Project</button>
-                <div class="project-item-details">
-                    <div class="description">
-                        <p>Procrastination Appreciation Generator, a useless website designed to appreciate your procrastination skills! It serves as a light-hearted distraction for those moments when you just need a break from more important tasks.</p>
-                    </div>
-                    <div class="general-info">
-                        <ul>
-                            <li>Created - <span> 27 Feb 2024</span></li>
-                            <li>Technologies Used - <span>HTML, CSS, JavaScript</span></li>
-                            <li>View Link - <span><a href="https://sravanisingani.github.io/HTTP5214/" target="_blank">Procrastination Appreciation Generator</a></span></li>
-                            <li>Github Link - <span><a href="https://github.com/SravaniSingani/HTTP5214" target="_blank">Procrastination Appreciation Generator Github</a></span></li>
-                        </ul>
-                    </div>
-                </div>
-             </div>
-
-               <!-- projects items end-->
-
+            </div>
+            <!-- projects items -->
+             <!-- projects items end-->
             </div>
         </div>
      </section>
-    </div>
 
-    <!-- Project Item Details Popop -->
-    <div class="project-popup">
-        <div class="pp-inner">
-            <div class="pp-content">
-                <div class="pp-header">
-                    <button type="button" class="btn pp-close"><i class='bx bx-x'></i></button>
-                    <div class="pp-thumbnail">
-                        <img src="img/tinytales.png" alt="tinytales">
+    <!-- Skills section -->
+    <section class="skills-section sec-padding active hiddenSection" id="skills">
+        <div class="container">
+                <div class="col">
+                    <h3 class="skill-item-title">Skills and Expertise</h3>
+                    <div class="description">
+                    <p>
+                        Here's a highlight of my technical expertise and the tools I use
+                    </p>
                     </div>
-                    <h3></h3>
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-heading">
+                                <p class="skill-icon"><i class='bx bx-code-alt'></i></p>
+                                <h4 class="skill-title">Languages</h4>
+                            </div>
+                            <div class="skill-item">
+                                HTML, CSS, JavaScript, PHP, C# (Asp.net), C, C++
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-heading">
+                                <p class="skill-icon"><i class='bx bx-data'></i></p>
+                                <h4 class="skill-title">Databases</h4>
+                            </div>
+                            <div class="skill-item">
+                                MySQL, MongoDB
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-heading">
+                                <p class="skill-icon"><i class='bx bxs-file'></i></p>
+                                <h4 class="skill-title">Frameworks and Libraries</h4>
+                            </div>
+                            <div class="skill-item">
+                                React.js, Node.js, Express.js, Laravel
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-heading">
+                                <p class="skill-icon"><i class='bx bx-window-alt'></i></p>
+                                <h4 class="skill-title">Design and Development</h4>
+                            </div>
+                            <div class="skill-item">
+                                Github, Visual Studio, Figma, Adobe Express, Canva
+                            </div>
+                        </div>
+
                 </div>
-                <div class="pp-body">
                 </div>
-            </div>
+                
         </div>
+    </section>
+
+     <!-- about section -->
+     <section class="about-section sec-padding active hiddenSection" id="about">
+            <div class="container">
+                
+                     <div class="about-item">
+                        <div class="about-item-details">
+                            <h3 class="about-item-title">The Person Behind The Code</h3>
+                            <div class="description">
+                                <p>
+                                    From the tech hubs of India to the vibrant streets of Toronto, my path has been an exciting blend of technical mastery and creative exploration. With a Bachelor's in <span>Computer Science Engineering</span> and a Post-Graduate diploma in <span>Web Development</span>, I've developed a unique skill set. 
+                                </p>
+                                <p>
+                                    As an <span>artistic soul</span> with a knack for <span>thinking outside the box</span>, I bring a unique perspective to every project.  
+                                    Whether designing sleek interfaces or building robust back-end systems, I aim to create web experiences that are both practical and craetive.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-item-thumbnail">  
+                            <img src="img/profpic.jpg" alt="fashion forecast" width="400">
+                        </div>
+                     </div>
+                
+            </div>
+     </section>
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="container">
+            <p class="description">© Sravani Singani 2024, All Copyrights Reserved</p>
+        </div>
+    </footer>
+
     </div>
 
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </body>
 </html>
