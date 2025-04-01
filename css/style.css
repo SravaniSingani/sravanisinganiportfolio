@@ -550,6 +550,32 @@ button{
     text-shadow: var(--ash-gray) 2px 0 10px;
 }
 
+/* Work Section */
+.work-item-details{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+}
+
+.work-item-details li{
+    list-style: circle;
+    padding-bottom: 0 !important;
+}
+
+/* Education Section */
+.education-item-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 15px 40%;
+    
+}
+
+.education-item-details li{
+    list-style: circle;
+}
+
 
 /* Project Section */
 
